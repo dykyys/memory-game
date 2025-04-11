@@ -1,4 +1,6 @@
 import { EmojiButton } from '../EmojiButton/EmojiButton';
+import s from './MemoryCard.module.css';
+
 export default function MemoryCard({
   handleClick,
   data,
@@ -6,7 +8,7 @@ export default function MemoryCard({
   matchedCards,
 }) {
   return (
-    <ul className="card-container">
+    <ul className={s.cardList}>
       {data.map((emoji, index) => {
         const selectedCardEntry = selectedCards.find(
           (emoji) => emoji.index === index
@@ -21,7 +23,7 @@ export default function MemoryCard({
           ? 'card-item--selected'
           : '';
         return (
-          <li key={index} className={`card-item ${cardStyle}`}>
+          <li key={index} className={s[cardStyle]}>
             <EmojiButton
               emoji={emoji}
               handleClick={() => handleClick(emoji.name, index)}

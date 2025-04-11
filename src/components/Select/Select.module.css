@@ -1,0 +1,23 @@
+.form__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.select {
+  background-color: var(--dark-primary);
+  color: var(--light-primary);
+  font-family: inherit;
+  padding: 0.5em;
+  border: 1px solid var(--dark-primary);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.select:hover,
+.select:focus {
+  background-color: var(--light-primary);
+  color: var(--dark-primary);
+  box-shadow: 0 0 2px 1px var(--dark-primary);
+}

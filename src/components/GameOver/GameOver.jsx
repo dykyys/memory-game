@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react';
+import { Wrapper } from '../Wrapper/Wrapper';
 import RegularButton from '../RegularButton/RegularButton';
 
 export const GameOver = ({ handleClick }) => {
@@ -9,9 +10,9 @@ export const GameOver = ({ handleClick }) => {
   }, []);
 
   return (
-    <div className="wrapper wrapper--accent" ref={divRef} tabIndex={-1}>
+    <Wrapper accent ref={divRef} tabIndex={-1}>
       <p className="p--large">You&apos;ve matched all the memory cards!</p>
       <RegularButton handleClick={handleClick}>Play again</RegularButton>
-    </div>
+    </Wrapper>
   );
 };

@@ -8,12 +8,13 @@ import { GameOver } from './components/GameOver/GameOver';
 import { ErrorCard } from './components/ErrorCard/ErrorCard';
 import { getEmojisArray } from './helpers/getEmojisArray';
 import { getRandomIndices } from './helpers/getRandomIndices';
+import { Text } from './components/Text/text';
 
 export default function App() {
   const [isFirstRender, setIsFirstRender] = useState(true);
   const [formData, setFormData] = useState({
     category: 'animals-and-nature',
-    number: 10,
+    number: 5,
   });
   const [isGameOn, setIsGameOn] = useState(false);
   const [emojisData, setEmojisData] = useState([]);
@@ -91,7 +92,7 @@ export default function App() {
 
   return (
     <main>
-      <h1 className="title">Memory</h1>
+      <Text className="title" text="Memory" type="h1" />
       {!isGameOn && !isError && (
         <Form
           handleSubmit={startGame}

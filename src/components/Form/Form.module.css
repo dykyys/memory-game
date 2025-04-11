@@ -1,0 +1,26 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-align: start;
+  min-width: 400px;
+}
+
+.form {
+  gap: 2em;
+  font-size: 1.125rem;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: var(--light-secondary);
+  color: var(--dark-primary);
+  border-radius: 0.5em;
+}
+
+.form__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}

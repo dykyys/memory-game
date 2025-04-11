@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: var(--light-secondary);
+  color: var(--dark-primary);
+  border-radius: 0.5em;
+}
+
+.accent {
+  padding: 2em 3em;
+  border: 1px solid var(--dark-primary);
+  box-shadow: 0 0 5px 2px var(--light-primary);
+}

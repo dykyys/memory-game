@@ -1,4 +1,5 @@
 import { decodeEntity } from 'html-entities';
+import RegularButton from '../RegularButton/RegularButton';
 export const EmojiButton = ({
   emoji,
   handleClick,
@@ -24,14 +25,15 @@ export const EmojiButton = ({
     : 'Card upside down.';
 
   return (
-    <button
-      onClick={selectedCardEntry ? null : handleClick}
-      className={`btn btn--emoji ${btnStyle}`}
+    <RegularButton
+      handleClick={selectedCardEntry ? null : handleClick}
+      className={btnStyle}
+      style="btn--emoji"
       disabled={matchedCardEntry}
-      aria-label={`Position ${index + 1}: ${btnAria}`}
-      aria-live="polite"
+      ariaLabel={`Position ${index + 1}: ${btnAria}`}
+      ariaLive="polite"
     >
       {btnContent}
-    </button>
+    </RegularButton>
   );
 };
