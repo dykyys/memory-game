@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import RegularButton from '../RegularButton/RegularButton';
 import { Select } from '../Select/Select';
 import s from './Form.module.css';
-import { Text } from '../Text/text';
+import { Text } from '../Text/Text';
 
 export default function Form({ handleSubmit, handleChange, isFirstRender }) {
   const divRef = useRef(null);

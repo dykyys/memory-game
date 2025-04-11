@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import RegularButton from '../RegularButton/RegularButton';
 import { Wrapper } from '../Wrapper/Wrapper';
-import { Text } from '../Text/text';
+import { Text } from '../Text/Text';
 
 export const ErrorCard = ({ handleClick }) => {
   const divRef = useRef(null);
