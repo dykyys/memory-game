@@ -14,7 +14,7 @@ export default function App() {
   const [isFirstRender, setIsFirstRender] = useState(true);
   const [formData, setFormData] = useState({
     category: 'animals-and-nature',
-    number: 5,
+    number: 10,
   });
   const [isGameOn, setIsGameOn] = useState(false);
   const [emojisData, setEmojisData] = useState([]);
