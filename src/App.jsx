@@ -8,7 +8,7 @@ import { GameOver } from './components/GameOver/GameOver';
 import { ErrorCard } from './components/ErrorCard/ErrorCard';
 import { getEmojisArray } from './helpers/getEmojisArray';
 import { getRandomIndices } from './helpers/getRandomIndices';
-import { Text } from './components/Text/text';
+import { Text } from './components/Text/Text';
 
 export default function App() {
   const [isFirstRender, setIsFirstRender] = useState(true);
