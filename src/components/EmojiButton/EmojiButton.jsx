@@ -1,5 +1,6 @@
 import { decodeEntity } from 'html-entities';
 import RegularButton from '../RegularButton/RegularButton';
+import s from './EmojiButton.module.css';
 export const EmojiButton = ({
   emoji,
   handleClick,
@@ -33,7 +34,9 @@ export const EmojiButton = ({
       ariaLabel={`Position ${index + 1}: ${btnAria}`}
       ariaLive="polite"
     >
-      {btnContent}
+      <span className={selectedCardEntry ? s['selectedSpan'] : ''}>
+        {btnContent}
+      </span>
     </RegularButton>
   );
 };

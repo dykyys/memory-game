@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^1.8.4",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.6.5",
     "html-entities": "^2.5.2",
     "npm": "^11.2.0",
     "react": "^19.0.0",

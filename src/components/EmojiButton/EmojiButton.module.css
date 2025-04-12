@@ -1,0 +1,11 @@
+.selectedSpan {
+  animation: textFadeInOut 0.6s ease-in-out;
+}
+@keyframes textFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

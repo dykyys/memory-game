@@ -22,6 +22,7 @@
   height: 100px;
   font-size: 3rem;
   border: 2px solid var(--light-primary);
+  /* animation: fadeInOut 2s ease-in-out; */
 }
 
 .btn--text:hover,
@@ -39,6 +40,10 @@
     box-shadow 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* .btn--emoji__back--selected {
+  animation: textFadeInOut 0.6s ease-in-out infinite;
+} */
+
 .btn--emoji__back--matched {
   backface-visibility: unset;
   background-color: var(--btn-disabled);
@@ -55,9 +60,27 @@
   cursor: pointer;
 }
 
+/* @keyframes textFadeInOut {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+
 .btn--emoji__back--selected,
 .btn--emoji__back--matched {
   transform: rotateY(180deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  /* animation: fadeInOut 0.6s ease-in-out; */
 }
 
 @media (min-width: 768px) {
